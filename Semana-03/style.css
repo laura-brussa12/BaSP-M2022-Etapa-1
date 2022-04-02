@@ -1,12 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+
+a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    position: relative;
+}
 body{
-    margin-top: -10px;
+    margin-top: -55px;
     margin-left: 0px;
 }
 .box-1{
     background-color: #AACE9B;
-    margin: 0px -10px -10px 0px;
+    margin: 0px -10px -20px 0px;
 }
 .box-1 h1{
     font-family:'Roboto', sans-serif;
@@ -16,6 +23,7 @@ body{
     font-size: 86px;
     line-height: 100.78px;
     text-align: right;
+    margin-bottom: 7px;
 }
 .box-1 h2{
     font-family: 'Roboto', sans-serif;
@@ -25,4 +33,74 @@ body{
     font-size: 27px;
     line-height: 31.64px;
     text-align: right;
+    margin-top: 7px;
+}
+.box-2 {
+    float: left;
+    background-color: #373867;
+    margin-top: -3px;
+    height: 500px;
+    width: 200px;
+    height: 6022px;
+    border-bottom-right-radius: 10px;
+    box-sizing: border-box;
+}
+.box-2 ul h4 p img {
+    text-align: left;
+}
+.box-2 ul{
+    list-style: none;  
+}
+
+.box-2 li:first-child {
+    background-color: #AACE9B;
+    padding: 10px 2px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-right: 95px;
+    border-radius: 5px;
+}
+.box-2 li:nth-child(2){
+    background-color: #AACE9B;
+    padding: 10px 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 95px;
+    border-radius: 5px;
+}
+.box-2 li:last-child {
+    background-color: #AACE9B;
+    padding: 10px 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 95px;
+    border-radius: 5px;
+}
+.box-2 h4{
+    font-family: 'Roboto', sans-serif;
+    color:  white;
+    font-weight: 700px;
+    font-style: bold;
+    font-size: 20px;
+    line-height: 23.44px;
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 5px;
+    margin-bottom: 2px;
+}
+.box-2 p{
+    font-family:'Roboto', sans-serif;;
+    color: white;
+    font-weight: 400px;
+    font-size: 13px;
+    line-height: 15.23px;
+    text-align: left;
+    margin-left: 5px;
+    margin-top: 1px;
+}
+.box-2 img{
+    margin-top: 5px;
+    margin-bottom: 7px;
+    margin-left: 60px;
+
 }
