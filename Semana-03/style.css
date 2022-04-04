@@ -175,9 +175,13 @@ main {
     margin-top: 120px;
 }
 
-.Box-04, .Box-05, .Box-06, .Box-07 {
+.Box-04,
+.Box-05,
+.Box-06,
+.Box-07,
+.Box-08 {
     width: 100%;
-    display: block;
+    display: inline-block;
     border-top: 5px solid rgba(170, 206, 155, 0.7);
 }
 
@@ -238,11 +242,13 @@ main {
     padding-left: 10px;
     text-align: center;
 }
-.Box-05{
+
+.Box-05 {
     width: 100%;
     display: inline-block;
 }
-.Box{
+
+.Box {
     float: left;
     width: 40%;
     margin: 50px;
@@ -252,10 +258,12 @@ main {
     height: 300px;
 
 }
-.Box.Right{
+
+.Box.Right {
     float: right;
 }
-.Box-05 h3{
+
+.Box-05 h3 {
     font-family: 'Roboto', sans-serif;
     color: #AACE9B;
     font-weight: 700;
@@ -266,47 +274,158 @@ main {
     width: 85%;
     padding-left: 30px;
 }
-.Box-05 p{
+
+.Box-05 p {
     font-family: 'Roboto', sans-serif;
     color: #373867;
     font-weight: 700;
     font-size: 18px;
     text-align: center;
 }
-.Box-06 h3{
+
+.Box-06 h3 {
     font-family: 'Roboto', sans-serif;
     color: #373867;
     font-weight: 700;
     font-size: 48px;
     text-align: left;
 }
+
+.Box-06 form {
+    padding: 30px;
+}
+
+.Box-06 label {
+    display: block;
+}
+
+.Box-06 .input {
+    padding: 15px;
+    width: 100%;
+    background-color: #373867;
+    opacity: 40%;
+    border-radius: 10px;
+}
+
+.Box-06 textarea {
+    padding: 15px;
+    width: 100%;
+    background-color: #373867;
+    opacity: 40%;
+    border-radius: 10px;
+}
+
+.Box-06 .submit {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 10%;
+    background-color: #AACE9B;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.Box-06 .label {
+    font-family: 'Roboto', sans-serif;
+    color: #373867;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: left;
+    padding: 10px;
+}
+
+.Box-06 .checkboxes {
+    width: 100%;
+    display: inline-block;
+    margin: 60px 0;
+
+}
+
+.Box-06 .checkbox {
+    float: left;
+    width: 33%;
+}
+.Box-06 .checkbox label {
+    float: left;
+    padding-left: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: #373867;
+    font-weight: 700;
+    font-size: 18px;
+}
+.Box-06 .checkbox input {
+    float: left;
+}
+
 .Box-07 {
     font-family: 'Roboto', sans-serif;
     color: #373867;
     text-align: center;
+    margin-bottom: 100px;
 }
-.Box-07 h2{
+
+.Box-07 h2 {
     font-size: 64px;
     font-weight: 700;
     margin-top: 60px;
     margin-bottom: 30px;
 }
-.Box-07 p{
+
+.Box-07 p {
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 20px;
     margin-right: 10px;
     margin-left: 10px;
 }
+
 .Box-07 .history {
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 65px;
+}
 
+.list {
+    float: left;
+    width: 33%;
+    display: block;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
+
+.list h4 {
+    font-family: 'Roboto', sans-serif;
+    color: #AACE9B;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
 }
+
+.list ul {
+    font-family: 'Roboto', sans-serif;
+    color: #373867;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 25px;
+    padding-left: 160px;
+    margin-bottom: 100px;
+}
+
+
 footer {
     display: inline-block;
     width: 100%;
     text-align: center;
+    background-color: #AACE9B;
+    padding: 50px;
+    font-family: 'Roboto', sans-serif;
+    color: #373867;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+footer p {
+    margin-top: 20px;
 }

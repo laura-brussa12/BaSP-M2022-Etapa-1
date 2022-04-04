@@ -130,21 +130,29 @@
                 <h3>Information</h3>
                 <form action="Information">
                     <fieldset>
-                        <label>Name and Last Name</label>
-                        <input type="text">
-                        <label>Email</label>
-                        <input type="text" />
-                        <label>Contact</label>
-                        <input type="checkbox">
-                        <label>Human Resources</label>
-                        <input type="checkbox">
-                        <label>System</label>
-                        <input type="checkbox">
-                        <label>Commercialization</label>
-                        <label>Message</label>
+                        <label class="label">Name and Last Name</label>
+                        <input class="input" type="text">
+                        <label class="label">Email</label>
+                        <input class="input" type="text" />
+                        <label class="label">Contact</label>
+                        <div class="checkboxes">
+                            <div class="checkbox">
+                                <input type="checkbox">
+                                <label>Human Resources</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox">
+                                <label>System</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox">
+                                <label>Commercialization</label>
+                            </div>
+                        </div>
+                        <label class="label">Message</label>
                         <textarea cols="30" rows="10"></textarea>
                     </fieldset>
-                    <a href="#">Send</a>
+                    <input class="submit" type="button" value="Submit">
                 </form>
             </div>
             <div class="Box-07">
@@ -188,38 +196,44 @@
                 </p>
             </div>
             <div class="Box-08">
-                <h4>Products</h4>
-                <ul>
-                    <li>Funcionalities</li>
-                    <li>Downloads</li>
-                    <li>Integrations</li>
-                    <li>Extras</li>
-                </ul>
-                <h4>Company</h4>
-                <ul>
-                    <li>About us</li>
-                    <li>Clients</li>
-                    <li>Resources</li>
-                    <li>Blog</li>
-                </ul>
-                <h4>Support</h4>
-                <ul>
-                    <li>Help</li>
-                    <li>Tutorials</li>
-                    <li>API</li>
-                    <li>Contact</li>
-                </ul>
+                <div class="list">
+                    <h4>Products</h4>
+                    <ul>
+                        <li>Funcionalities</li>
+                        <li>Downloads</li>
+                        <li>Integrations</li>
+                        <li>Extras</li>
+                    </ul>
+                </div>
+                <div class="list">
+                    <h4>Company</h4>
+                    <ul>
+                        <li>About us</li>
+                        <li>Clients</li>
+                        <li>Resources</li>
+                        <li>Blog</li>
+                    </ul>
+                </div>
+                <div class="list">
+                    <h4>Support</h4>
+                    <ul>
+                        <li>Help</li>
+                        <li>Tutorials</li>
+                        <li>API</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
             </div>
+            <footer>
+                <p>
+                    Rosario, Santa Fe - Argentina
+                </p>
+                <p>
+                    Copyright © 2022 Trackgenix SA. All rights reserved.
+                </p>
+            </footer>
         </div>
     </main>
-    <footer>
-        <p>
-            Rosario, Santa Fe - Argentina
-        </p>
-        <p>
-            Copyright © 2022 Trackgenix SA. All rights reserved.
-        </p>
-    </footer>
 </body>
 
 </html>
