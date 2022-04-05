@@ -8,7 +8,7 @@ body {
 
 div.container {
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 35px;
 }
 
 hr.green-line {
@@ -58,7 +58,8 @@ a {
     box-sizing: border-box;
     position: absolute;
     padding-top: 40px;
-    height: 100%;
+    top: 139px;
+    bottom: 0;
     border-left: 50px solid #AACE9B;
 }
 
@@ -134,7 +135,7 @@ a {
 }
 
 main {
-    margin-left: 250px;
+    margin-left: 228px;
     width: 85%;
 }
 
@@ -283,6 +284,10 @@ main {
     text-align: center;
 }
 
+.Box-06 {
+    padding-top: 140px;
+}
+
 .Box-06 h3 {
     font-family: 'Roboto', sans-serif;
     color: #373867;
@@ -301,7 +306,7 @@ main {
 
 .Box-06 .input {
     padding: 15px;
-    width: 100%;
+    width: 95%;
     background-color: #373867;
     opacity: 40%;
     border-radius: 10px;
@@ -309,7 +314,7 @@ main {
 
 .Box-06 textarea {
     padding: 15px;
-    width: 100%;
+    width: 95%;
     background-color: #373867;
     opacity: 40%;
     border-radius: 10px;
@@ -317,14 +322,16 @@ main {
 
 .Box-06 .submit {
     box-sizing: border-box;
-    display: inline-block;
-    width: 10%;
-    background-color: #AACE9B;
-    color: black;
+    display: block;
+    background-color: #69A362;
+    border-color: #AACE9B;
+    color: white;
     margin-top: 20px;
     margin-bottom: 40px;
-    padding: 15px;
+    margin-right: 25px;
+    padding: 15px 55px;
     border-radius: 10px;
+    float: right;
 }
 
 .Box-06 .label {
@@ -415,11 +422,9 @@ main {
 
 
 footer {
-    display: inline-block;
-    width: 100%;
     text-align: center;
     background-color: #AACE9B;
-    padding: 50px;
+    padding: 50px 50px 50px 228px;
     font-family: 'Roboto', sans-serif;
     color: #373867;
     font-size: 18px;
