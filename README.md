@@ -14,3 +14,12 @@ Trackgenix consider several features:
 
 
 ###  All you have to do is sing in... then we do the work 
+
+##Frist Week 
+We design the page for Trackgenix with Figma.
+
+##Second Week 
+We do the structure of the landing page using HTML. You can see the code in the "Semana-02" folder and then in "index.html"
+
+##Third Week
+We word to CSS. We do the landing page of Trackgenix. To see the code you need to go to "Semana-03" folder and the "style.css"
