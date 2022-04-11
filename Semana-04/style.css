@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("./reset.css");
-@import url("./header.css");
 
 html {
   font-family: "Roboto", sans-serif;
@@ -256,19 +255,6 @@ html {
   font-size: 20px;
   padding-left: 5px;
   padding-bottom: 5px;
-}
-
-footer {
-  text-align: center;
-  background-color: #aace9b;
-  color: #373867;
-  font-size: 18px;
-  font-weight: 700;
-  padding: 30px 0;
-}
-
-footer p {
-  margin-top: 20px;
 }
 
 /*Tablet*/
