@@ -1,0 +1,408 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("./reset.css");
+@import url("./header.css");
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.green-line {
+  margin: 0 85px;
+  height: 4px;
+  border-top: 3px solid #aace9b;
+}
+
+.box-2 {
+  display: none;
+}
+
+.Box-03 {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.Box-03 h2 {
+  color: #373867;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 35px;
+  margin-top: 30px;
+}
+
+.Box-03 h3 {
+  color: #373867;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 20px;
+  margin-top: 5px;
+  text-align: right;
+  margin-right: 35px;
+  margin-bottom: 30px;
+}
+
+.Box-03 img {
+  width: 80%;
+  height: auto;
+}
+
+.Box-03 p {
+  color: #373867;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.Box-04 {
+  text-align: center;
+}
+
+.Box-04 .features {
+  display: flex;
+  flex-direction: column;
+}
+
+.Box-04 .features .feature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  margin-bottom: 45px;
+}
+
+.Box-04 .features .feature.right {
+  flex-direction: row-reverse;
+}
+
+.Box-04 .features .feature img {
+  width: 25%;
+  opacity: 60%;
+  height: auto;
+}
+
+.Box-04 h3 {
+  color: #373867;
+  font-weight: 700px;
+  font-style: Bold;
+  font-size: 35px;
+  margin: 40px 0;
+}
+
+.Box-04 .features .feature h4 {
+  color: #373867;
+  font-weight: 700px;
+  font-style: Bold;
+  font-size: 20px;
+  line-height: 10px;
+}
+
+.Box-04 .features .feature p {
+  width: 90%;
+  padding-top: 15px;
+  padding-left: 10px;
+  color: #373867;
+  text-align: center;
+}
+
+.Box-05 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Box-05 .Box {
+  margin: 50px;
+  border: 5px solid #69a362;
+  padding: 35px;
+  height: 180px;
+}
+
+.Box-05 .Box h3 {
+  color: #aace9b;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.Box-05 .Box p {
+  color: #373867;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+}
+
+.Box-06 {
+  margin-bottom: 45px;
+}
+
+.Box-06 h3 {
+  color: #373867;
+  font-weight: 700px;
+  font-style: Bold;
+  font-size: 35px;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.Box-06 .input {
+  padding: 10px;
+  width: 90%;
+  background-color: #373867;
+  opacity: 40%;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.Box-06 textarea {
+  padding: 15px;
+  width: 90%;
+  background-color: #373867;
+  opacity: 40%;
+  border-radius: 10px;
+}
+
+.Box-06 .submit {
+  display: block;
+  background-color: #69a362;
+  border-color: #aace9b;
+  color: white;
+  margin-top: 20px;
+  padding: 15px 55px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.Box-06 .label {
+  display: block;
+  color: #373867;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: left;
+  padding: 10px 0;
+}
+
+.Box-06 .checkboxes {
+  margin: 30px 0;
+  width: 96%;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.Box-06 .checkbox label {
+  color: #373867;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.Box-07 {
+  margin: 45px 0;
+  color: #373867;
+  text-align: center;
+}
+
+.Box-07 h2 {
+  font-size: 35px;
+  margin-bottom: 40px;
+}
+
+.Box-07 p {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.Box-07 p.history {
+  font-weight: 700;
+}
+
+.Box-08 {
+  margin: 45px 0;
+}
+
+.Box-08 .lists {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.Box-08 .lists .list {
+  margin-bottom: 45px;
+}
+
+.Box-08 .lists .list ul {
+  margin-left: 35px;
+}
+
+.Box-08 .lists .list h4 {
+  color: #aace9b;
+  font-weight: 700;
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+.Box-08 .lists .list li {
+  color: #373867;
+  font-weight: 700;
+  font-size: 20px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+}
+
+footer {
+  text-align: center;
+  background-color: #aace9b;
+  color: #373867;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 30px 0;
+}
+
+footer p {
+  margin-top: 20px;
+}
+
+/*Tablet*/
+@media only screen and (min-width: 768px) {
+  .Box-03 {
+    margin: 80px 0;
+    text-align: left;
+  }
+  .Box-03 h2 {
+      font-size: 55px;
+      margin-bottom: 40px;
+  }
+  .Box-03 h3 {
+    font-size: 30px;
+    text-align: left;
+  }
+  .Box-03 .img-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+
+  .Box-03 .img-container img {
+    width: 55%;
+  }
+  .Box-03 .img-container p {
+    margin-top: 0;
+    text-align: center;
+  }
+  .Box-04 {
+    margin: 80px 0;
+  }
+  .Box-04 h3 {
+    font-size: 50px;
+  }
+  .Box-04 .features {
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .Box-04 .features .feature {
+    flex: 40%;
+    margin-bottom: 80px;
+  }
+
+  .Box-04 .features .feature:nth-child(2n) {
+    margin-left: 30px;
+  }
+
+  .Box-04 .features .feature.right {
+    flex-direction: row;
+  }
+
+  .Box-04 .features .feature img {
+    width: 35%;
+  }
+
+  .Box-04 .features .feature h4 {
+    font-size: 19px;
+  }
+  .Box-04 .features .feature p {
+    padding-top: 30px;
+    font-size: 14px;
+    width: 95%;
+  }
+
+  .Box-05 {
+    margin: 80px 0;
+  }
+
+  .Box-05 .container {
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .Box-05 .Box {
+    margin: 50px 15px;
+    flex: 33%;
+    height: 220px;
+  }
+
+  .Box-05 .Box h3 {
+    font-size: 22px;
+  }
+
+  .Box-05 .Box p {
+    font-size: 18px;
+  }
+
+  .Box-06 {
+    margin: 80px 0;
+  }
+
+  .Box-06 h3 {
+    font-size: 50px;
+  }
+
+  .Box-06 textarea,
+  .Box-06 .input {
+    width: 95%;
+  }
+
+  .Box-07 {
+    margin: 80px 0;
+  }
+
+  .Box-07 h2 {
+    font-size: 50px;
+  }
+
+  .Box-07 p {
+    margin-bottom: 60px;
+  }
+
+  .Box-08 {
+    margin: 80px 0;
+  }
+
+  .Box-08 .lists {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 20px;
+  }
+  .Box-08 .lists .list h4 {
+    font-size: 32px;
+  }
+  .Box-08 .lists .list li {
+    font-size: 18px;
+  }
+}
+
+/*Desktop*/
+@media only screen and (min-width: 1024px) {
+}
