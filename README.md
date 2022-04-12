@@ -15,11 +15,14 @@ Trackgenix consider several features:
 
 ###  All you have to do is sing in... then we do the work 
 
-##Frist Week 
+## Frist Week 
 We design the page for Trackgenix with Figma.
 
-##Second Week 
+## Second Week 
 We do the structure of the landing page using HTML. You can see the code in the "Semana-02" folder and then in "index.html"
 
-##Third Week
+## Third Week
 We word to CSS. We do the landing page of Trackgenix. To see the code you need to go to "Semana-03" folder and the "style.css"
+
+## Forth Week 
+We work with Flexbox in CSS. We do the landing page of Trackgenix (Mobile First, Tablet and Desktop design). To see the code, you need to go to "Semana-04" folder and you can see all the folders there. Or you can click here "https://laura-brussa12.github.io/BaSP-M2022-Etapa-1/Semana-04/" and see the results 
