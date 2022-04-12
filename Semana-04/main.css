@@ -391,4 +391,224 @@ html {
 
 /*Desktop*/
 @media only screen and (min-width: 1024px) {
+  body {
+    position: relative;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    width: 70%;
+  }
+
+  main .container {
+    padding: 0 50px 0 0;
+  }
+
+  .box-2 .aside-green-line {
+    float: right;
+    border-top: 2px solid #69a362;
+    width: 88%;
+  }
+
+  .green-line {
+    display: none;
+  }
+
+  .Box-04,
+  .Box-05,
+  .Box-06,
+  .Box-07,
+  .Box-08 {
+    width: 100%;
+    display: inline-block;
+    border-top: 5px solid rgba(170, 206, 155, 0.7);
+  }
+  .box-1 .title h2 {
+    line-height: 39.64px;
+  }
+
+  .box-2 {
+    display: block;
+    background-color: #373867;
+    width: 28%;
+    border-bottom-right-radius: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    padding-top: 40px;
+    top: 139px;
+    bottom: 0;
+    border-left: 50px solid #aace9b;
+  }
+
+  .box-2 ul.buttons {
+    list-style: none;
+  }
+
+  .box-2 li {
+    background-color: #aace9b;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .box-2 li:first-child {
+    margin-top: 50px;
+  }
+
+  .box-2 li:nth-child(2) {
+    padding: 10px 5px;
+  }
+
+  .box-2 li a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    position: relative;
+  }
+
+  .box-2 h4 {
+    color: white;
+    font-weight: 700px;
+    font-style: bold;
+    font-size: 20px;
+    line-height: 23.44px;
+    text-align: left;
+    margin-top: 90px;
+    margin-left: 5px;
+    margin-bottom: 25px;
+  }
+
+  .box-2 p {
+    color: white;
+    font-weight: 400;
+    width: 100%;
+    font-size: 13px;
+    line-height: 15.23px;
+    margin-left: 5px;
+    margin-bottom: 30px;
+  }
+
+  .box-2 .contact {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .box-2 .contact p {
+    font-weight: 700;
+  }
+
+  .box-2 img {
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 7px;
+  }
+
+  .Box-03 h2 {
+    font-size: 60px;
+  }
+
+  .Box-03 h3 {
+    font-size: 30px;
+  }
+
+  .Box-03 p {
+    font-size: 20px;
+    line-height: 50px;
+  }
+
+  .Box-04,
+  .Box-06,
+  .Box-07,
+  .Box-08 {
+    padding-top: 80px;
+  }
+
+  .Box-04 .features .feature {
+    flex: 33%;
+  }
+
+  .Box-04 .features .feature img {
+    width: 40%;
+  }
+
+  .Box-04 .features .feature h4 {
+    font-size: 24px;
+    line-height: 25px;
+  }
+
+  .Box-04 .features .feature p {
+    padding-top: 30px;
+    font-size: 18px;
+    width: 95%;
+  }
+
+  .Box-05 .container {
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .Box-05 .Box {
+    margin: 70px 15px;
+    flex: 33%;
+    height: 220px;
+  }
+
+  .Box-05 .Box h3 {
+    font-size: 25px;
+  }
+
+  .Box-05 .Box p {
+    font-size: 15px;
+  }
+
+  .Box-06 .label {
+    font-size: 25px;
+  }
+
+  .Box-06 .input,
+  .Box-06 .checkboxes,
+  .Box-06 textarea {
+    width: 100%;
+    padding: 15px 0;
+  }
+
+  .Box-06 .checkboxes {
+    justify-content: space-around;
+  }
+
+  .Box-06 .checkboxes .checkbox {
+    display: flex;
+    align-items: center;
+  }
+
+  .Box-06 .checkboxes .checkbox label {
+    font-size: 25px;
+    margin-left: 5px;
+  }
+
+  .Box-06 .submit {
+    width: auto;
+    margin-left: auto;
+    padding: 15px 45px;
+    font-size: 20px;
+  }
+
+  .Box-07 h2 {
+    margin-bottom: 60px;
+  }
+
+  .Box-07 p {
+    margin-bottom: 50px;
+    font-size: 22px;
+  }
+
+  .Box-08 .lists {
+    justify-content: space-around;
+  }
 }

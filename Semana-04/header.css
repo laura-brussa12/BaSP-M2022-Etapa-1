@@ -66,3 +66,19 @@
       justify-content: flex-end;
   } 
 }
+@media only screen and (min-width: 1024px) {
+  .box-1 h1 {
+    font-size: 86px;
+    line-height: 100.78px;
+  }
+  .box-1 h2 {
+    font-size: 27px;
+    line-height: 50.64px;
+  }
+  .box-1 .btn-hamburguer {
+      display: none;
+  }
+  .box-1 .container {
+      justify-content: flex-end;
+  } 
+}
