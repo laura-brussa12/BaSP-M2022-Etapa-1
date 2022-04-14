@@ -26,3 +26,6 @@ We word to CSS. We do the landing page of Trackgenix. To see the code you need t
 
 ## Forth Week 
 We work with Flexbox in CSS. We do the landing page of Trackgenix (Mobile First, Tablet and Desktop design). To see the code, you need to go to "Semana-04" folder and you can see all the folders there. Or you can click here "https://laura-brussa12.github.io/BaSP-M2022-Etapa-1/Semana-04/" and see the results 
+
+## Fifth Week 
+We start with JavaScript. In this first time, we have to do some exercises to practice JS
