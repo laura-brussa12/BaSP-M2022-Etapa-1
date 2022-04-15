@@ -38,8 +38,8 @@ console.log ('result:' + e2ee);
 console.log('-Exercise 2.f');
 
 var e2f = 'problematica semanal';
-//var e2ff = ((e2f.substring(1,0)).toUpperCase()) + ((e2f.substring(1,20)).toLowerCase());
 var e2ff = ((e2f.substring(1,0)).toUpperCase()) + ((e2f.substring(1,e2f.indexOf(' ')).toLowerCase())) + ' ' 
 + ((e2f.substring(e2f.indexOf(' ')+1,e2f.indexOf(' ')+2)).toUpperCase()) 
 + ((e2f.substring(e2f.indexOf(' ')+2, e2f.length)).toLowerCase());
+
 console.log ('result:' + e2ff); 
