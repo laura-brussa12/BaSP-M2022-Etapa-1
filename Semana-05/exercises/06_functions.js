@@ -57,7 +57,7 @@ function suma6d(n1, n2) {
     }
 
 }
-suma6d(e6a1, e6a2);
+suma6d(e6d1, e6d2);
 suma6d(7.4, 5);
 suma6d(4, 0.3);
 
@@ -84,6 +84,6 @@ function suma6e(n1, n2) {
         console.log('Result: ' + num);
     }
 }
-suma6e(e6a1, e6a2);
+suma6e(e6e1, e6e2);
 suma6e(7.4, 5);
 suma6e(4, 0.3);
