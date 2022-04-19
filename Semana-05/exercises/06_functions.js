@@ -18,7 +18,7 @@ var e6b1 = 50;
 var e6b2 = 25;
 function suma6b(n1, n2) {
     if (isNaN(n1) || isNaN(n2)) {
-        console.log('Result: NaN');
+        alert('Result: NaN');
     } else {
         var num = n1 + n2;
         console.log('Result: ' + num);
@@ -46,7 +46,7 @@ var e6d1 = 50;
 var e6d2 = 25;
 function suma6d(n1, n2) {
     if (isNaN(n1) || isNaN(n2)) {
-        console.log('Result: NaN');
+        alert('Result: NaN');
     } else if (!Number.isInteger(n1)) {
         console.log('Fail ' + Math.round(n1));
     } else if (!Number.isInteger(n2)) {
