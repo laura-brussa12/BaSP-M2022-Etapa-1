@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="../styles/sidebar.css">
     <link rel="stylesheet" href="../styles/logIn.css">
+    <script src="../javascript/login.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,9 +27,9 @@
         <hr class="green-line" />
         <div class="container">
             <ul class="buttons">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sing Up</a></li>
-                <li><a href="#">Log In</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sing-up.html">Sing Up</a></li>
+                <li><a href="login.html">Log In</a></li>
             </ul>
         </div>
         <hr class="green-line" />
@@ -53,22 +54,30 @@
         <div class="Box-03">
             <div class="container main-container">
                 <h2 class="LogIn">Log In</h2>
-                <form action="Information">
+                <form action="#" id="login">
                     <div class="input">
                         <label for="label">
                             <img src="../images/e-mail.png" alt="e-mail">
                         </label>
-                        <input class='inputText' type="text" />
+                        <input id="email" name="email" type="text" />
                     </div>
                     <div class="input">
                         <label for="label">
                             <img src="../images/candado.png" alt="password">
                         </label>
-                        <input class='inputText' type="text" />
+                        <input id="password" name="password" type="password" />
                     </div>
+                    <div class="imput">
+                        <input type="checkbox">
+                        <label for="remember">Remember me</label>
+                    </div>
+                        <input class="button" type="submit" value="Agree" />
+                        <div id="error">
+                            <img src="" alt="">
+                            <span>Email or Password incorrect</span>
+                        </div>
                 </form>
-                    <input class="button" type="button" value="Agree" />
-                    <a href="#">Reset Password</a>
+                <a href="#">Reset Password</a>
             </div>
         </div>
     </main>
