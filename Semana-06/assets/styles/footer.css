@@ -1,0 +1,21 @@
+footer {
+    text-align: center;
+    background-color: #aace9b;
+    color: #373867;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 30px 0;
+  }
+  
+  footer p {
+    margin-top: 20px;
+    }
+
+    @media only screen and (min-width: 1024px) {
+      footer {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        width: 77%;
+      }
+    }
