@@ -12,9 +12,9 @@ window.onload = function () {
         e.preventDefault();
 
         if (e.target.value.match(emailRegex)) {
-            e.target.style.border = '1px solid #0F0';
+            e.target.style.borderColor = '#0F0';
         } else {
-            e.target.style.border = '1px solid #F00';
+            e.target.style.borderColor = '#F00';
         }
     }
 
@@ -22,11 +22,10 @@ window.onload = function () {
 
     function passwordValidator(e) {
         e.preventDefault();
-
         if (e.target.value.match(passwordRegex)) {
-            e.target.style.border = '1px solid #0F0';
+            e.target.style.borderColor = '#0F0';
         } else {
-            e.target.style.border = '1px solid #F00';
+            e.target.style.borderColor = '#F00';
         }
     }
 
@@ -35,7 +34,7 @@ window.onload = function () {
 
     function focusEvent(e) {
         e.preventDefault();
-        e.target.style.border = '1px solid #fff';
+        e.target.style.borderColor = '#373867';
     }
 
     var login = document.getElementById('login');
@@ -49,12 +48,12 @@ window.onload = function () {
 
         if (formPassword.match(passwordRegex) && formEmail.match(emailRegex)) {
             error.style.display = 'none';
-            password.style.border = '1px solid #0F0';
-            email.style.border = '1px solid #0F0';
+            password.style.borderColor = '#0F0';
+            email.style.borderColor = '#0F0';
             alert('Email: ' + formEmail + '\n' + 'Password: ' + formPassword);
         } else {
-            password.style.border = '1px solid #f00';
-            email.style.border = '1px solid #f00';
+            password.style.borderColor = '#f00';
+            email.style.borderColor = '#f00';
             error.style.display = 'block';
             alert('Email or password incorrect');
         }

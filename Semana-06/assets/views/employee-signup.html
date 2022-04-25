@@ -52,23 +52,29 @@
     </aside>
     <main>
         <div class="Box-03">
-            <div class="container sing-container">
+            <div class="container sign-container">
                 <h2>Sing Up</h2>
                 <form action="*" id="signup">
-                    <input type="text" placeholder="Full Name" id="fullName" name="fullName">
-                    <input type="text" placeholder="DNI" id="dni" name="dni">
-                    <input type="date" placeholder="Birthday" id="birthday" name="birthday">
-                    <input type="text" placeholder="Tel." id="tel" name="tel">
-                    <input type="text" placeholder="Adress" id="adress" name="adress">
-                    <input type="text" placeholder="Location" id="location" name="location">
-                    <input type="text" placeholder="C.P." id="cp" name="cp">
-                    <input type="text" placeholder="Email" id="email" name="email">
-                    <input type="password" placeholder="Password" id="password" name="password">
-                    <input type="password" placeholder="Confirm Password" id="confirmp" name="confirmp">
+                    <div class="inputsContainer">
+                        <div class="left">
+                            <input type="text" placeholder="Full Name" id="fullName" name="fullName">
+                            <input type="text" placeholder="DNI" id="dni" name="dni">
+                            <input type="date" placeholder="Birthday" id="birthday" name="birthday">
+                            <input type="text" placeholder="Tel." id="tel" name="tel">
+                            <input type="text" placeholder="Adress" id="adress" name="adress">
+                        </div>
+                        <div class="right">
+                            <input type="text" placeholder="Location" id="location" name="location">
+                            <input type="text" placeholder="C.P." id="cp" name="cp">
+                            <input type="text" placeholder="Email" id="email" name="email">
+                            <input type="password" placeholder="Password" id="password" name="password">
+                            <input type="password" placeholder="Confirm Password" id="confirmp" name="confirmp">
+                        </div>
+                    </div>
                     <input class='button' type="submit" value="Create account">
                     <div id="error">
                         <img src="" alt="">
-                        <span>Wrong Input</span>
+                        <span>Wrong Inputs</span>
                     </div>
                 </form>
             </div>

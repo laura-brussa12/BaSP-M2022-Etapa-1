@@ -24,9 +24,9 @@ window.onload = function () {
         e.preventDefault();
 
         if (e.target.value.match(fullnameRegex) && e.target.value.length >= 3) {
-            e.target.style.border = '1px solid #0F0';
+            e.target.style.borderColor = '#0F0';
         } else {
-            e.target.style.border = '1px solid #F00';
+            e.target.style.borderColor = '#F00';
         }
     }
 
@@ -36,9 +36,9 @@ window.onload = function () {
         e.preventDefault();
 
         if (e.target.value.match(numericRegex) && e.target.value.length > 7) {
-            e.target.style.border = '1px solid #0F0';
+            e.target.style.borderColor = '#0F0';
         } else {
-            e.target.style.border = '1px solid #F00';
+            e.target.style.borderColor = '#F00';
         }
     }
 
@@ -48,9 +48,9 @@ window.onload = function () {
         e.preventDefault();
 
         if (e.target.value) {
-            e.target.style.border = '1px solid #0F0';
+            e.target.style.borderColor = '#0F0';
         } else {
-            e.target.style.border = '1px solid #F00';
+            e.target.style.borderColor = '#F00';
         }
     }
 
@@ -60,9 +60,9 @@ window.onload = function () {
         e.preventDefault();
 
         if (e.target.value.match(numericRegex) && e.target.value.length == 10) {
-            e.target.style.border = '1px solid #0F0';
+            e.target.style.borderColor = '#0F0';
         } else {
-            e.target.style.border = '1px solid #F00';
+            e.target.style.borderColor = '#F00';
         }
     }
 
@@ -72,9 +72,9 @@ window.onload = function () {
         e.preventDefault();
 
         if (e.target.value.match(adressRegex) && e.target.value.length >= 5) {
-            e.target.style.border = '1px solid #0F0';
+            e.target.style.borderColor = '#0F0';
         } else {
-            e.target.style.border = '1px solid #F00';
+            e.target.style.borderColor = '#F00';
         }
     }
 
@@ -84,9 +84,9 @@ window.onload = function () {
         e.preventDefault();
 
         if (e.target.value.match(locationRegex) && e.target.value.length >= 5) {
-            e.target.style.border = '1px solid #0F0';
+            e.target.style.borderColor = '#0F0';
         } else {
-            e.target.style.border = '1px solid #F00';
+            e.target.style.borderColor = '#F00';
         }
     }
 
@@ -96,9 +96,9 @@ window.onload = function () {
         e.preventDefault();
 
         if (e.target.value.match(numericRegex) && e.target.value.length >= 4 && e.target.value.length <= 5) {
-            e.target.style.border = '1px solid #0F0';
+            e.target.style.borderColor = '#0F0';
         } else {
-            e.target.style.border = '1px solid #F00';
+            e.target.style.borderColor = '#F00';
         }
     }
 
@@ -108,9 +108,9 @@ window.onload = function () {
         e.preventDefault();
 
         if (e.target.value.match(emailRegex)) {
-            e.target.style.border = '1px solid #0F0';
+            e.target.style.borderColor = '#0F0';
         } else {
-            e.target.style.border = '1px solid #F00';
+            e.target.style.borderColor = '#F00';
         }
     }
 
@@ -120,9 +120,9 @@ window.onload = function () {
         e.preventDefault();
 
         if (e.target.value.match(passwordRegex)) {
-            e.target.style.border = '1px solid #0F0';
+            e.target.style.borderColor = '#0F0';
         } else {
-            e.target.style.border = '1px solid #F00';
+            e.target.style.borderColor = '#F00';
         }
     }
 
@@ -132,9 +132,9 @@ window.onload = function () {
         e.preventDefault();
 
         if (e.target.value === password.value) {
-            e.target.style.border = '1px solid #0F0';
+            e.target.style.borderColor = '#0F0';
         } else {
-            e.target.style.border = '1px solid #F00';
+            e.target.style.borderColor = '#F00';
         }
     }
 
@@ -151,7 +151,7 @@ window.onload = function () {
 
     function focusEvent(e) {
         e.preventDefault();
-        e.target.style.border = '1px solid #fff';
+        e.target.style.borderColor = '#373867';
     }
 
     var signup = document.getElementById('signup');
@@ -174,15 +174,11 @@ window.onload = function () {
 
         if (formFullName.match(fullnameRegex) && formdni.match(numericRegex) && formbirthday && formtel.match(numericRegex) && formadress.match(adressRegex) && formlocation.match(locationRegex) && formcp.match(numericRegex) && formEmail.match(emailRegex) && formPassword.match(passwordRegex) && formconfirmp === formPassword) {
             error.style.display = 'none';
-            password.style.border = '1px solid #0F0';
-            email.style.border = '1px solid #0F0';
             alert('Full Name: ' + formFullName + '\n' + 'DNI: ' + formdni + '\n' + 'Birthday: ' + formbirthday + '\n' +
                 'Tel.: ' + formtel + '\n' + 'Adress: ' + formadress + '\n' + 'Location: ' + formlocation + '\n' +
                 'C.P.: ' + formcp + '\n' + 'E-mail: ' + formEmail + '\n' + 'Password' + formPassword + '\n' +
                 'Confirm Password: ' + formconfirmp);
         } else {
-            password.style.border = '1px solid #f00';
-            email.style.border = '1px solid #f00';
             error.style.display = 'block';
             alert('Wrong Inputs');
         }
