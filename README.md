@@ -29,3 +29,6 @@ We work with Flexbox in CSS. We do the landing page of Trackgenix (Mobile First,
 
 ## Fifth Week 
 We start with JavaScript. In this first time, we have to do some exercises to practice JS
+
+## Sixth Week 
+We create the Log in and Sign up views with HTML and CSS. Then we have to do all the validators in Log in and Sign up with JS. To see the code, you need to go to "Semana-06" folder. Or you can click here https://laura-brussa12.github.io/BaSP-M2022-Etapa-1/Semana-06/assets/views/and see the results. 
