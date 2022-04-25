@@ -25,3 +25,9 @@
     padding: 15px 45px;
     font-size: 20px;
 }
+
+#error {
+    padding: 15px 5px;
+    color: #F00;
+    display: none;
+}

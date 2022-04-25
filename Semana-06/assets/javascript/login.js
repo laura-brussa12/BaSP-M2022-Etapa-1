@@ -35,7 +35,6 @@ window.onload = function () {
 
     function focusEvent(e) {
         e.preventDefault();
-        e.target.style.background = 'transparent';
         e.target.style.border = '1px solid #fff';
     }
 

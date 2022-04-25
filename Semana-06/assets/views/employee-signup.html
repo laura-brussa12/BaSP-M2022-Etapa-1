@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="../styles/sidebar.css">
     <link rel="stylesheet" href="../styles/sing-up.css">
+    <script src="../javascript/employee-signup.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,7 +28,7 @@
         <div class="container">
             <ul class="buttons">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="sing-up.html">Sing Up</a></li>
+                <li><a href="employee-signup.html">Sing Up</a></li>
                 <li><a href="login.html">Log In</a></li>
             </ul>
         </div>
@@ -53,13 +54,23 @@
         <div class="Box-03">
             <div class="container sing-container">
                 <h2>Sing Up</h2>
-                <form action="Information">
-                    <input type="text" value="Full Name">
-                    <input type="text" value="Email">
-                    <input type="text" value="Password">
-                    <input type="text" value="Confirm Password">
+                <form action="*" id="signup">
+                    <input type="text" placeholder="Full Name" id="fullName" name="fullName">
+                    <input type="text" placeholder="DNI" id="dni" name="dni">
+                    <input type="date" placeholder="Birthday" id="birthday" name="birthday">
+                    <input type="text" placeholder="Tel." id="tel" name="tel">
+                    <input type="text" placeholder="Adress" id="adress" name="adress">
+                    <input type="text" placeholder="Location" id="location" name="location">
+                    <input type="text" placeholder="C.P." id="cp" name="cp">
+                    <input type="text" placeholder="Email" id="email" name="email">
+                    <input type="password" placeholder="Password" id="password" name="password">
+                    <input type="password" placeholder="Confirm Password" id="confirmp" name="confirmp">
+                    <input class='button' type="submit" value="Create account">
+                    <div id="error">
+                        <img src="" alt="">
+                        <span>Wrong Input</span>
+                    </div>
                 </form>
-                <input class='button' type="button" value="Create account">
             </div>
         </div>
     </main>
