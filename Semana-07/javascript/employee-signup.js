@@ -1,6 +1,7 @@
 window.onload = function () {
 
-    var fullname = document.getElementById('fullName');
+    var name = document.getElementById('name');
+    var lastname = document.getElementById('lastname');
     var dni = document.getElementById('dni');
     var birthday = document.getElementById('birthday');
     var tel = document.getElementById('tel');
@@ -11,22 +12,60 @@ window.onload = function () {
     var password = document.getElementById('password');
     var confirmp = document.getElementById('confirmp');
 
-    var emailRegex = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
+    var localName = localStorage.getItem('name');
+    var localLastName = localStorage.getItem('lastName');
+    var localDni = localStorage.getItem('dni');
+    var localDob = localStorage.getItem('dob');
+    var localPhone = localStorage.getItem('phone');
+    var localAddress = localStorage.getItem('address');
+    var localCity = localStorage.getItem('city');
+    var localZip = localStorage.getItem('zip');
+    var localEmail = localStorage.getItem('email');
+    var localPassword = localStorage.getItem('password');
+    var localCPassword = localStorage.getItem('confirmPassword');
+
+    if (localName && localLastName && localDni && localDob && localPhone && localAddress && localCity &&
+        localZip && localEmail && localPassword && localCPassword) {
+            name.value = localName;
+            lastname.value = localLastName;
+            dni.value = localDni;
+            birthday.value = localDob;
+            tel.value = localPhone;
+            adress.value = localAddress;
+            location.value = localCity;
+            cp.value = localZip;
+            email.value = localEmail;
+            password.value = localPassword;
+            confirmp.value = localCPassword;
+    }
+    var emailRegex = /^[a-zA-Z0-9_.+-]+@[a-zA-Z]+\.[a-zA-Z.]+$/;
     var passwordRegex = /^[a-zA-Z0-9]+$/;
-    var fullnameRegex = /^(?![\s.]+$)[a-zA-Z\s.]*$/;
     var numericRegex = /^[0-9-.]+$/;
     var adressRegex = /^(?![\s.]+$)[a-zA-Z0-9\s.]*$/;
     var locationRegex = /[A-Za-z0-9? ,_-]/;
+    var lettersRegex = /^[a-zA-Z]+$/;
 
-    fullname.addEventListener('blur', fullnameValidator);
+    name.addEventListener('blur', nameValidator);
 
-    function fullnameValidator(e) {
+    function nameValidator(e) {
         e.preventDefault();
 
-        if (e.target.value.match(fullnameRegex) && e.target.value.length >= 3) {
-            e.target.style.borderColor = '#0F0';
+        if (e.target.value.match(lettersRegex) && e.target.value.length > 3) {
+            e.target.classList.add("input-success");
         } else {
-            e.target.style.borderColor = '#F00';
+            e.target.classList.add("input-error");
+        }
+    }
+
+    lastname.addEventListener('blur', lastnameValidator);
+
+    function lastnameValidator(e) {
+        e.preventDefault();
+
+        if (e.target.value.match(lettersRegex) && e.target.value.length > 3) {
+            e.target.classList.add("input-success");
+        } else {
+            e.target.classList.add("input-error");
         }
     }
 
@@ -36,9 +75,9 @@ window.onload = function () {
         e.preventDefault();
 
         if (e.target.value.match(numericRegex) && e.target.value.length > 7) {
-            e.target.style.borderColor = '#0F0';
+            e.target.classList.add("input-success");
         } else {
-            e.target.style.borderColor = '#F00';
+            e.target.classList.add("input-error");
         }
     }
 
@@ -48,9 +87,9 @@ window.onload = function () {
         e.preventDefault();
 
         if (e.target.value) {
-            e.target.style.borderColor = '#0F0';
+            e.target.classList.add("input-success");
         } else {
-            e.target.style.borderColor = '#F00';
+            e.target.classList.add("input-error");
         }
     }
 
@@ -60,9 +99,9 @@ window.onload = function () {
         e.preventDefault();
 
         if (e.target.value.match(numericRegex) && e.target.value.length == 10) {
-            e.target.style.borderColor = '#0F0';
+            e.target.classList.add("input-success");
         } else {
-            e.target.style.borderColor = '#F00';
+            e.target.classList.add("input-error");
         }
     }
 
@@ -72,9 +111,9 @@ window.onload = function () {
         e.preventDefault();
 
         if (e.target.value.match(adressRegex) && e.target.value.length >= 5) {
-            e.target.style.borderColor = '#0F0';
+            e.target.classList.add("input-success");
         } else {
-            e.target.style.borderColor = '#F00';
+            e.target.classList.add("input-error");
         }
     }
 
@@ -83,10 +122,10 @@ window.onload = function () {
     function locationValidator(e) {
         e.preventDefault();
 
-        if (e.target.value.match(locationRegex) && e.target.value.length >= 5) {
-            e.target.style.borderColor = '#0F0';
+        if (e.target.value.match(locationRegex) && e.target.value.length > 3) {
+            e.target.classList.add("input-success");
         } else {
-            e.target.style.borderColor = '#F00';
+            e.target.classList.add("input-error");
         }
     }
 
@@ -96,9 +135,9 @@ window.onload = function () {
         e.preventDefault();
 
         if (e.target.value.match(numericRegex) && e.target.value.length >= 4 && e.target.value.length <= 5) {
-            e.target.style.borderColor = '#0F0';
+            e.target.classList.add("input-success");
         } else {
-            e.target.style.borderColor = '#F00';
+            e.target.classList.add("input-error");
         }
     }
 
@@ -108,9 +147,9 @@ window.onload = function () {
         e.preventDefault();
 
         if (e.target.value.match(emailRegex)) {
-            e.target.style.borderColor = '#0F0';
+            e.target.classList.add("input-success");
         } else {
-            e.target.style.borderColor = '#F00';
+            e.target.classList.add("input-error");
         }
     }
 
@@ -119,10 +158,10 @@ window.onload = function () {
     function passwordValidator(e) {
         e.preventDefault();
 
-        if (e.target.value.match(passwordRegex)) {
-            e.target.style.borderColor = '#0F0';
+        if (e.target.value.match(passwordRegex) && e.target.value.length >= 8) {
+            e.target.classList.add("input-success");
         } else {
-            e.target.style.borderColor = '#F00';
+            e.target.classList.add("input-error");
         }
     }
 
@@ -131,14 +170,15 @@ window.onload = function () {
     function confirmpValidator(e) {
         e.preventDefault();
 
-        if (e.target.value === password.value) {
-            e.target.style.borderColor = '#0F0';
+        if (e.target.value === password.value && e.target.value.length >= 8) {
+            e.target.classList.add("input-success");
         } else {
-            e.target.style.borderColor = '#F00';
+            e.target.classList.add("input-error");
         }
     }
 
-    fullname.addEventListener('focus', focusEvent);
+    name.addEventListener('focus', focusEvent);
+    lastname.addEventListener('focus', focusEvent);
     dni.addEventListener('focus', focusEvent);
     birthday.addEventListener('focus', focusEvent);
     tel.addEventListener('focus', focusEvent);
@@ -151,7 +191,9 @@ window.onload = function () {
 
     function focusEvent(e) {
         e.preventDefault();
-        e.target.style.borderColor = '#373867';
+        e.target.classList.remove("input-error");
+        e.target.classList.remove("input-success");
+        error.classList.add("hide-error");
     }
 
     var signup = document.getElementById('signup');
@@ -160,7 +202,8 @@ window.onload = function () {
     function signupsubmit(event) {
         event.preventDefault();
         var form = new FormData(signup);
-        var formFullName = form.get('fullName');
+        var formname = form.get('name');
+        var formlastname = form.get('lastname');
         var formdni = form.get('dni');
         var formbirthday = form.get('birthday');
         var formtel = form.get('tel');
@@ -171,18 +214,36 @@ window.onload = function () {
         var formPassword = form.get('password');
         var formconfirmp = form.get('confirmp');
 
-        if (formFullName.match(fullnameRegex) && formdni.match(numericRegex) && formbirthday && formtel.match(numericRegex) && formadress.match(adressRegex) && formlocation.match(locationRegex) && formcp.match(numericRegex) && formEmail.match(emailRegex) && formPassword.match(passwordRegex) && formconfirmp === formPassword) {
-            error.style.display = 'none';
-            fetch(`https://basp-m2022-api-rest-server.herokuapp.com/signup?fullname=${formFullName}`+
-            `&dni=${formdni}&birthday=${formbirthday}&tel=${formtel}&adress=${formadress}&location=${formlocation}`+
-            `&cp=${formcp}&email=${formEmail}&password=${formPassword}&confirmpassword=${formconfirmp}`)
-            .then(response => { console.log(response) }).catch(error => { console.log(error) }) 
-            alert('Full Name: ' + formFullName + '\n' + 'DNI: ' + formdni + '\n' + 'Birthday: ' + formbirthday + '\n' +
+        var newDateArray = formbirthday.split('-');
+        var newDate = `${newDateArray[1]}/${newDateArray[2]}/${newDateArray[0]}`;
+
+        if (formname.match(lettersRegex) && formlastname.match(lettersRegex) && formdni.match(numericRegex) && formbirthday && formtel.match(numericRegex) && formadress.match(adressRegex) && formlocation.match(locationRegex) && formcp.match(numericRegex) && formEmail.match(emailRegex) && formPassword.match(passwordRegex) && formconfirmp === formPassword) {
+            fetch(`https://basp-m2022-api-rest-server.herokuapp.com/signup?name=${formname}&lastName=${formlastname}` +
+                `&dni=${formdni}&dob=${newDate}&phone=${formtel}&address=${formadress}&city=${formlocation}` +
+                `&zip=${formcp}&email=${formEmail}&password=${formPassword}&confirmpassword=${formconfirmp}`)
+                .then(response => response.json())
+                .then(data => {
+                    alert('The form was successfully sent. Response: ' + JSON.stringify(data))
+                    localStorage.setItem('name', formname);
+                    localStorage.setItem('lastName', formlastname);
+                    localStorage.setItem('dni', formdni);
+                    localStorage.setItem('dob', formbirthday);
+                    localStorage.setItem('phone', formtel);
+                    localStorage.setItem('address', formadress);
+                    localStorage.setItem('city', formlocation);
+                    localStorage.setItem('zip', formcp);
+                    localStorage.setItem('email', formEmail);
+                    localStorage.setItem('password', formPassword);
+                    localStorage.setItem('confirmPassword', formconfirmp);
+                })
+                .catch(error => alert('The form was not successfully sent. Response: ' + JSON.stringify(error)))
+
+            alert('Name: ' + formname + '\n' + 'Last Name: ' + formlastname + '\n' + 'DNI: ' + formdni + '\n' + 'Birthday: ' + formbirthday + '\n' +
                 'Tel.: ' + formtel + '\n' + 'Adress: ' + formadress + '\n' + 'Location: ' + formlocation + '\n' +
                 'C.P.: ' + formcp + '\n' + 'E-mail: ' + formEmail + '\n' + 'Password' + formPassword + '\n' +
                 'Confirm Password: ' + formconfirmp);
         } else {
-            error.style.display = 'block';
+            error.classList.remove("hide-error");
             alert('Wrong Inputs');
         }
     }

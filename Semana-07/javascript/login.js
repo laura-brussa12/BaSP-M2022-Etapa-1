@@ -1,17 +1,17 @@
 window.onload = function () {
     var passwordRegex = /^[a-zA-Z0-9]+$/;
-    var emailRegex = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
+    var emailRegex = /^[a-zA-Z0-9_.+-]+@[a-zA-Z]+\.[a-zA-Z.]+$/;
 
     var email = document.getElementById('email');
     var password = document.getElementById('password');
     var error = document.getElementById('error');
 
-    var localEmail = localStorage.getItem('email'); 
+    var localEmail = localStorage.getItem('email');
     var localPassword = localStorage.getItem('password');
-    
-    if(localEmail && localPassword) {
+
+    if (localEmail && localPassword) {
         email.value = localEmail;
-        password.value = localPassword; 
+        password.value = localPassword;
     }
 
     email.addEventListener('blur', emailValidator);
@@ -20,9 +20,9 @@ window.onload = function () {
         e.preventDefault();
 
         if (e.target.value.match(emailRegex)) {
-            e.target.style.borderColor = '#0F0';
+            e.target.classList.add("input-success");
         } else {
-            e.target.style.borderColor = '#F00';
+            e.target.classList.add("input-error");
         }
     }
 
@@ -31,9 +31,9 @@ window.onload = function () {
     function passwordValidator(e) {
         e.preventDefault();
         if (e.target.value.match(passwordRegex)) {
-            e.target.style.borderColor = '#0F0';
+            e.target.classList.add("input-success");
         } else {
-            e.target.style.borderColor = '#F00';
+            e.target.classList.add("input-error");
         }
     }
 
@@ -42,7 +42,9 @@ window.onload = function () {
 
     function focusEvent(e) {
         e.preventDefault();
-        e.target.style.borderColor = '#373867';
+        e.target.classList.remove("input-error");
+        e.target.classList.remove("input-success");
+        error.classList.add("hide-error");
     }
 
     var login = document.getElementById('login');
@@ -56,20 +58,20 @@ window.onload = function () {
 
         if (formPassword.match(passwordRegex) && formEmail.match(emailRegex)) {
             error.style.display = 'none';
-            password.style.borderColor = '#0F0';
-            email.style.borderColor = '#0F0';
+            password.classList.add("input-success");
+            email.classList.add("input-success");
             fetch(`https://basp-m2022-api-rest-server.herokuapp.com/login?email=${formEmail}&password=${formPassword}`)
                 .then(response => response.json())
                 .then(data => {
                     alert('The form was successfully sent. Response: ' + JSON.stringify(data))
-                    localStorage.setItem('email', formEmail); 
-                    localStorage.setItem('password', formPassword); 
+                    localStorage.setItem('email', formEmail);
+                    localStorage.setItem('password', formPassword);
                 })
                 .catch(error => alert('The form was not successfully sent. Response: ' + JSON.stringify(error)))
             alert('Email: ' + formEmail + '\n' + 'Password: ' + formPassword);
         } else {
-            password.style.borderColor = '#f00';
-            email.style.borderColor = '#f00';
+            password.classList.add("input-error");
+            email.classList.add("input-error");
             error.style.display = 'block';
             alert('Email or password incorrect');
         }

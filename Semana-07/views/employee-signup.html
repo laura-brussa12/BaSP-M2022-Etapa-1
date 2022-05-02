@@ -57,7 +57,8 @@
                 <form action="*" id="signup">
                     <div class="inputsContainer">
                         <div class="left">
-                            <input type="text" placeholder="Full Name" id="fullName" name="fullName">
+                            <input type="text" placeholder="Name" id="name" name="name">
+                            <input type="text" placeholder="Last Name" id="lastname" name="lastname">
                             <input type="text" placeholder="DNI" id="dni" name="dni">
                             <input type="date" placeholder="Birthday" id="birthday" name="birthday">
                             <input type="text" placeholder="Tel." id="tel" name="tel">
@@ -72,8 +73,7 @@
                         </div>
                     </div>
                     <input class='button' type="submit" value="Create account">
-                    <div id="error">
-                        <img src="" alt="">
+                    <div id="error" class="hide-error">
                         <span>Wrong Inputs</span>
                     </div>
                 </form>

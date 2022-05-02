@@ -257,20 +257,35 @@ html {
   padding-bottom: 5px;
 }
 
+#login input.input-error, #signup input.input-error {
+  border-color: #F00;
+}
+
+#login input.input-success, #signup input.input-success {
+  border-color: #69a362;
+}
+
+.hide-error {
+  display: none;
+}
+
 /*Tablet*/
 @media only screen and (min-width: 768px) {
   .Box-03 {
     margin: 80px 0;
     text-align: left;
   }
+
   .Box-03 h2 {
-      font-size: 55px;
-      margin-bottom: 40px;
+    font-size: 55px;
+    margin-bottom: 40px;
   }
+
   .Box-03 h3 {
     font-size: 30px;
     text-align: left;
   }
+
   .Box-03 .img-container {
     display: flex;
     justify-content: space-between;
@@ -281,16 +296,20 @@ html {
   .Box-03 .img-container img {
     width: 55%;
   }
+
   .Box-03 .img-container p {
     margin-top: 0;
     text-align: center;
   }
+
   .Box-04 {
     margin: 80px 0;
   }
+
   .Box-04 h3 {
     font-size: 50px;
   }
+
   .Box-04 .features {
     flex-wrap: wrap;
     flex-direction: row;
@@ -317,6 +336,7 @@ html {
   .Box-04 .features .feature h4 {
     font-size: 19px;
   }
+
   .Box-04 .features .feature p {
     padding-top: 30px;
     font-size: 14px;
@@ -381,9 +401,11 @@ html {
     justify-content: space-between;
     margin: 0 20px;
   }
+
   .Box-08 .lists .list h4 {
     font-size: 32px;
   }
+
   .Box-08 .lists .list li {
     font-size: 18px;
   }
@@ -394,6 +416,7 @@ html {
   body {
     position: relative;
   }
+
   main {
     display: flex;
     flex-direction: column;
@@ -418,6 +441,7 @@ html {
     display: inline-block;
     border-top: 5px solid rgba(170, 206, 155, 0.7);
   }
+
   .box-1 .title h2 {
     line-height: 39.64px;
   }
