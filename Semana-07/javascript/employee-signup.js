@@ -170,10 +170,13 @@ window.onload = function () {
         var formEmail = form.get('email');
         var formPassword = form.get('password');
         var formconfirmp = form.get('confirmp');
-        console.log(form, formFullName)
 
         if (formFullName.match(fullnameRegex) && formdni.match(numericRegex) && formbirthday && formtel.match(numericRegex) && formadress.match(adressRegex) && formlocation.match(locationRegex) && formcp.match(numericRegex) && formEmail.match(emailRegex) && formPassword.match(passwordRegex) && formconfirmp === formPassword) {
             error.style.display = 'none';
+            fetch(`https://basp-m2022-api-rest-server.herokuapp.com/signup?fullname=${formFullName}`+
+            `&dni=${formdni}&birthday=${formbirthday}&tel=${formtel}&adress=${formadress}&location=${formlocation}`+
+            `&cp=${formcp}&email=${formEmail}&password=${formPassword}&confirmpassword=${formconfirmp}`)
+            .then(response => { console.log(response) }).catch(error => { console.log(error) }) 
             alert('Full Name: ' + formFullName + '\n' + 'DNI: ' + formdni + '\n' + 'Birthday: ' + formbirthday + '\n' +
                 'Tel.: ' + formtel + '\n' + 'Adress: ' + formadress + '\n' + 'Location: ' + formlocation + '\n' +
                 'C.P.: ' + formcp + '\n' + 'E-mail: ' + formEmail + '\n' + 'Password' + formPassword + '\n' +

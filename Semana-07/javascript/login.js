@@ -6,6 +6,14 @@ window.onload = function () {
     var password = document.getElementById('password');
     var error = document.getElementById('error');
 
+    var localEmail = localStorage.getItem('email'); 
+    var localPassword = localStorage.getItem('password');
+    
+    if(localEmail && localPassword) {
+        email.value = localEmail;
+        password.value = localPassword; 
+    }
+
     email.addEventListener('blur', emailValidator);
 
     function emailValidator(e) {
@@ -50,6 +58,14 @@ window.onload = function () {
             error.style.display = 'none';
             password.style.borderColor = '#0F0';
             email.style.borderColor = '#0F0';
+            fetch(`https://basp-m2022-api-rest-server.herokuapp.com/login?email=${formEmail}&password=${formPassword}`)
+                .then(response => response.json())
+                .then(data => {
+                    alert('The form was successfully sent. Response: ' + JSON.stringify(data))
+                    localStorage.setItem('email', formEmail); 
+                    localStorage.setItem('password', formPassword); 
+                })
+                .catch(error => alert('The form was not successfully sent. Response: ' + JSON.stringify(error)))
             alert('Email: ' + formEmail + '\n' + 'Password: ' + formPassword);
         } else {
             password.style.borderColor = '#f00';
