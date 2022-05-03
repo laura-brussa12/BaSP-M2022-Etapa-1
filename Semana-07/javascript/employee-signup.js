@@ -218,9 +218,9 @@ window.onload = function () {
         var newDate = `${newDateArray[1]}/${newDateArray[2]}/${newDateArray[0]}`;
 
         if (formname.match(lettersRegex) && formlastname.match(lettersRegex) && formdni.match(numericRegex) && formbirthday && formtel.match(numericRegex) && formadress.match(adressRegex) && formlocation.match(locationRegex) && formcp.match(numericRegex) && formEmail.match(emailRegex) && formPassword.match(passwordRegex) && formconfirmp === formPassword) {
-            fetch(`https://basp-m2022-api-rest-server.herokuapp.com/signup?name=${formname}&lastName=${formlastname}` +
-                `&dni=${formdni}&dob=${newDate}&phone=${formtel}&address=${formadress}&city=${formlocation}` +
-                `&zip=${formcp}&email=${formEmail}&password=${formPassword}&confirmpassword=${formconfirmp}`)
+            fetch("https://basp-m2022-api-rest-server.herokuapp.com/signup?name="+formname+"&lastName="+formlastname+
+                "dni="+formdni+"dob="+newDate"phone="+formtel+"address="+formadress+"city="+formlocation+
+                "zip="+formcp+"email="+formEmail+"password="+formPassword+"confirmpassword="+formconfirmp)
                 .then(response => response.json())
                 .then(data => {
                     alert('The form was successfully sent. Response: ' + JSON.stringify(data))

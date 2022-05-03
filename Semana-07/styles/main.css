@@ -257,16 +257,18 @@ html {
   padding-bottom: 5px;
 }
 
-#login input.input-error, #signup input.input-error {
+#login input.input-error,
+#signup input.input-error {
   border-color: #F00;
 }
 
-#login input.input-success, #signup input.input-success {
+#login input.input-success,
+#signup input.input-success {
   border-color: #69a362;
 }
 
-.hide-error {
-  display: none;
+#error.show-error {
+  display: block;
 }
 
 /*Tablet*/

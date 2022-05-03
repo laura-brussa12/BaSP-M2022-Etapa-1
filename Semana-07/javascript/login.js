@@ -44,7 +44,7 @@ window.onload = function () {
         e.preventDefault();
         e.target.classList.remove("input-error");
         e.target.classList.remove("input-success");
-        error.classList.add("hide-error");
+        error.classList.remove("show-error");
     }
 
     var login = document.getElementById('login');
@@ -57,10 +57,9 @@ window.onload = function () {
         var formPassword = form.get('password');
 
         if (formPassword.match(passwordRegex) && formEmail.match(emailRegex)) {
-            error.style.display = 'none';
             password.classList.add("input-success");
             email.classList.add("input-success");
-            fetch(`https://basp-m2022-api-rest-server.herokuapp.com/login?email=${formEmail}&password=${formPassword}`)
+            fetch("https://basp-m2022-api-rest-server.herokuapp.com/login?email="+formEmail+"&password="+formPassword)
                 .then(response => response.json())
                 .then(data => {
                     alert('The form was successfully sent. Response: ' + JSON.stringify(data))
@@ -72,7 +71,7 @@ window.onload = function () {
         } else {
             password.classList.add("input-error");
             email.classList.add("input-error");
-            error.style.display = 'block';
+            error.classList.add("show-error"); 
             alert('Email or password incorrect');
         }
     }
